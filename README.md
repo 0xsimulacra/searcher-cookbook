@@ -8,6 +8,7 @@ This collection will expect that you have some basic knowledge as I'm not going 
 
 # Contents:
 - [eth_call with state override](eth_call-state-override/README.md)
+- [server configuration](server-configuration/README.md)
 
 # Bonus
 I will release packages that I use in most of my bots and will give some insights how I use them
@@ -19,7 +20,6 @@ At the moment I'm thinking of releasing information based on the following topic
 I will release them in a way like I did it in the first example.  
 Please let me know if you want some other topics that will help beginners or advanced searchers.
 ```
-    - server configuration
     - use discord to log and update your bot
     - utilize eth logs for faster updates to your bot    
     - utilize eth_callBundle, eth_sendBundle and flashbots_getBundleStats in your logs  
