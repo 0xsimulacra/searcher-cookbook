@@ -13,7 +13,7 @@ This collection will expect that you have some basic knowledge as I'm not going 
 # Bonus
 I will release packages that I use in most of my bots and will give some insights how I use them
 - [discogo](https://github.com/tripolious/discogo) - used for sending special logs to my discord channel and update different configurations like miner fee % without restarting the bot or check flashbots_getBundleStats directly from discord.    
-
+- [funcsig-search](https://github.com/tripolious/funcsig-search) - search for specific function signatures
 
 ### To be continued
 At the moment I'm thinking of releasing information based on the following topics.  
