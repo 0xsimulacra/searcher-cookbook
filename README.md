@@ -1,55 +1,43 @@
 # searcher cookbook
-The cookbook is a collection of usefully scripts, functions, smart contracts, helpers and tips for golang evm searchers.  
-I will extend the list from time to time with some alpha or just some hints to help you in your searcher journey.  
-First I want to apologize for my english, I'm not a native speaker ;).  
-Since my journey as a searcher started I had lots of ups and downs. 
-All in all you need to be a pretty competitive guy to stay up with all the excellent searchers out there.  
-This collection will expect that you have some basic knowledge as I'm not going to explain everything in detail. Still I hope it will help you to get faster into searching.
+Follow on [twitter](https://twitter.com/tripolious) for updates  
+
+The cookbook is a collection of usefully scripts, functions, smart contracts, helpers, tips and bots for golang searchers.
+
+I will try to cover most of the topics you need to know as a searcher.  
+Don't expect the bots I will share over time to make you rich, as I will only start sharing older versions of it.  
+Still, if you follow up and understand the basics I'm pretty sure you will find your own alpha.
+
+All in all you need to love competitive games to stay up with all the excellent searchers out there.
 
 # Contents:
-- [eth_call with state override](eth_call-state-override/README.md)
-- [server configuration](server-configuration/README.md)
+- 01 - [server configuration](server-configuration/README.md) Node set up on your server.  
+- 02 - [eth_call with state override](eth_call-state-override/README.md) Example usage for BatchCalls and eth_call with state overwrites. We will use this later for faster initialization and reboots for your bot.
+- 03 - **to be announced** - Example usage to use discord to update your bot without restarting and also log data you will use to debug your bundles
+- 04 - **to be announced** - Example usage of logs to load and prepare pairs and tokens
+- 05 - **to be announced** - cache in-memory your pairs and save it when you shut down your bot
+- 06 - **to be announced** - Smart Contract to make an onchain calculation for uni2 and uni3 pairs
+- 07 - **to be announced** - Smart Contracts without flashswaps
+  - 07.1 - **to be announced** - uni2-swaps assembly contract 
+  - 07.2 - **to be announced** - add uni3-swaps
+- 08 - **to be announced** - Smart Contracts with flashswaps
+  - 08.1 - **to be announced** - uni2-flashswaps assembly contract
+  - 08.2 - **to be announced** - add uni3-flashswaps
+- 09 - **to be announced** - Example to make offchain calculations for uni2 and uni3
+- 10 - **to be announced** - Order pairs for trade-ways and save to in-memory cache
+- 11 - **to be announced** - Example to use eth_callBundle, eth_sendBundle and flashbots_getBundleStats
+- 12 - **to be announced** - Example to find best routes in your trade-ways
+- 13 - **to be announced** - Put everything together for your first bot
 
 # Bonus
-I will release packages that I use in most of my bots and will give some insights how I use them
+I will release packages I use in my bots or scripts that will help you in different areas
 - [discogo](https://github.com/tripolious/discogo) - used for sending special logs to my discord channel and update different configurations like miner fee % without restarting the bot or check flashbots_getBundleStats directly from discord.    
 - [funcsig-search](https://github.com/tripolious/funcsig-search) - search for specific function signatures
 
 ### To be continued
-At the moment I'm thinking of releasing information based on the following topics.  
-I will release them in a way like I did it in the first example.  
-Please let me know if you want some other topics that will help beginners or advanced searchers.
-```
-    - use discord to log and update your bot
-    - utilize eth logs for faster updates to your bot    
-    - utilize eth_callBundle, eth_sendBundle and flashbots_getBundleStats in your logs  
-    - prepare token lists
-    - prepare pair lists
-    - uni2 / uni3 onchain calculations
-    - uni2 / uni3 arb contracts
-    - uni2 offchain calculations
-    - uni3 offchain calculations
-    - opensea-seaport api
-    - looksrare api
-    - x2y2 api
-    - nft arb contract
-    - keep your key's away from your server - especially helpful if you work in a team and more than 1 person can access the server
-    - ....
-```
+After I finished the topics from above I will probably start sharing some other strats and bots.  
+Please let me know in what topics your interested the most.
 
 ### Why do you share all this information?
-I know that most of the searchers keep their findings and learnings as a secrete (I also did it :D), still I think we need more devs in the market to push crypto.    
-Especially in this market situation we need more devs to join crypto and as a searcher you will get in touch and need to learn nearly everything about crypto.  
-Flashbots did an amazing job, and so I want to contribute back.  
-Still I will not share everything completely in detail, so you will still need to learn the things and get familiar with the different topics in detail ;)
-
-- Smart Contracts security (make them secure, or you will suffer)
-- Smart Contract optimization (don't fear assembly or packed data)
-- Smart Contract testing (you will need to test against different states, fork and so on)
-- Learn to understand different protocols and how to read their code
-- Use of the go-ethereum package (signing, nonce handling, ...)
-- Get in touch with different evm-chains to check if your alpha will work there too
-- Understand nodes (geth, erigon, ...) and keep your server secured
-- get a deep dive into your chosen language (go, node, rust, ...) to write your bot
-
-What can motivate more than earning money while you compete in a wild pvp world ;)?
+I know that most of the searchers keep their findings and learnings as a secrete, still I think we need more devs in the market to push crypto.    
+As a searcher you will get in touch and need to learn nearly everything about crypto.  
+Flashbots did an amazing job, and so I want to contribute back.
