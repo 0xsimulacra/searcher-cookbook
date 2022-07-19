@@ -12,7 +12,7 @@ All in all you need to love competitive games to stay up with all the excellent 
 # Contents:
 - 01 - [server configuration](server-configuration/README.md) Node set up on your server.  
 - 02 - [eth_call with state override](eth_call-state-override/README.md) Example usage for BatchCalls and eth_call with state overwrites. We will use this later for faster initialization and reboots for your bot.
-- 03 - **to be announced** - Example usage to use discord to update your bot without restarting and also log data you will use to debug your bundles
+- 03 - [log information and update your program via discord](discord-usage/README.md) - Example usage to use discord to update your bot without restarting and also log data you will use to debug your bundles
 - 04 - **to be announced** - Example usage of logs to load and prepare pairs and tokens
 - 05 - **to be announced** - cache in-memory your pairs and save it when you shut down your bot
 - 06 - **to be announced** - Smart Contract to make an onchain calculation for uni2 and uni3 pairs
