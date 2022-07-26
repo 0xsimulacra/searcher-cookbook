@@ -17,7 +17,7 @@ go run bulk-call/bulk-call.go --rpc _wss_connection_string_
 ### explanation
 ```
 //SPDX-License-Identifier: UNLICENSED
-pragma solidity = 0.6.12;
+pragma solidity = 0.8.15;
 
 contract Uni2ReserveInfo {
 
@@ -40,7 +40,10 @@ to help summarize the data for later processing we want the following return val
 address pair, uint112 reserve0, uint112 reserve1
 
 after you have your custom contract you need the deployed byte-code to use it to overwrite the state of the original pair contract  
-if you don't know how to get the deployed byte-code start with remix, deploy the contract and you will find it in "Compilation Details" => RUNTIME BYTECODE  
+```bash
+solc Xyz.sol --bin-runtime --optimize
+```
+if you don't have solc, you can use remix, deploy the contract and you will find it in "Compilation Details" => RUNTIME BYTECODE
 
 ### Tips
 Of course, you don't need to use assembly in your fake smart contract  
